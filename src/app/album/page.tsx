@@ -9,7 +9,7 @@ export default async function AlbumsPage() {
   };
 
   return (
-    <section className="pt-28">
+    <section className="pt-28 h-screen">
       <div className="flex flex-col gap-8">
         <div className="flex justify-between">
           <h1 className="text-4xl font-bold text-cyan-500">Albums</h1>

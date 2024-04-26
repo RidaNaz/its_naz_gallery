@@ -17,7 +17,7 @@ export default async function FavoritesPage() {
         .execute() as { resources: SearchResult[] }
 
     return (
-        <section className="pt-28">
+        <section className="pt-28 pb-8">
 
             <ForceRefresh />
             

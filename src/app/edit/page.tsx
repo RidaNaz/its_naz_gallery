@@ -26,11 +26,11 @@ export default function EditPage({
     const [prompt, setPrompt] = useState("");
 
     return (
-        <section className="pt-28">
+        <section className="pt-28 pb-10">
 
             <div className="flex flex-col gap-8">
                 <div className="flex justify-between">
-                    <h1 className="text-3xl">Edit {publicId}</h1>
+                    <h1 className="text-3xl font-bold text-cyan-500">Editor</h1>
                 </div>
 
                 <div className="flex gap-4">

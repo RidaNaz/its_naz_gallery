@@ -5,7 +5,7 @@ import Spline from "@splinetool/react-spline"
 export default function Home() {
   return (
 
-    <main className=" flex flex-col-reverse pt-32 md:flex-row w-full h-screen p-4 items-center justify-center relative overflow-x-hidden ">
+    <main className="flex flex-col-reverse pt-32 md:flex-row w-full h-screen p-4 items-center justify-center relative overflow-x-hidden ">
 
       <div className=" w-full h-2/4 md:h-full md:w-2/5 flex flex-col justify-center items-center md:items-start">
 

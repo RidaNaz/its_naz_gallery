@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
     return (
-        <div className="border-b">
+        <div className="border-b hidden sm:block">
             <div className="flex ml-6 mr-7 justify-between">
             <div className="flex h-16 items-center px-4 container mx-auto gap-2">
                 <Image

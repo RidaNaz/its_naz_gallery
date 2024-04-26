@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import SideMenu from "@/components/SideMenu";
 import Navbar from "@/components/Navbar";
+import { MobNav } from "@/components/MobNav";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,14 +28,13 @@ export default function RootLayout({
 
     <html lang="en" className="dark">
       <body className={`${inter.className} bg-gray-950 `}>
-
+        <MobNav />
         <Navbar />
-
         <div className="flex">
           <SideMenu />
-          <div className="w-3/4 px-4 -mt-20"> {children} </div>
+          <div className="w-3/4 px-4 -mt-20 "> {children} </div>
         </div>
-
+        <Footer />
       </body>
     </html>
   );
