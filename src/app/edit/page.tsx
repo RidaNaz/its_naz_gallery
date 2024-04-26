@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { CldImage } from "next-cloudinary";
 import { useState } from "react";
 
@@ -27,40 +26,48 @@ export default function EditPage({
 
     return (
         <section className="pt-28 pb-10">
-
             <div className="flex flex-col gap-8">
                 <div className="flex justify-between">
-                    <h1 className="text-3xl font-bold text-cyan-500">Editor</h1>
+                    <h1 className="text-4xl font-bold text-cyan-500">Editor</h1>
                 </div>
 
-                <div className="flex gap-4">
-                    <Button variant="ghost" onClick={() => setTransformation(undefined)}> Clear All </Button>
+                <div className="grid gri-col sm:grid-rows-1 items-center gap-4">
 
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col md:flex-row gap-4">
                         <Button
                             onClick={() => {
                                 setTransformation("generative-fill");
                                 setPrompt(pendingPrompt);
                             }}
-                        > Apply Generative Fill </Button>
-
-                        <Label>Prompt</Label>
+                        >
+                            Apply Generative Fill
+                        </Button>
                         <Input
                             value={pendingPrompt}
                             onChange={(e) => setPendingPrompt(e.currentTarget.value)}
+                            placeholder="Prompt"
+                            className="bg-transparent"
                         />
                     </div>
+                    <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
+                        <Button onClick={() => setTransformation("blur")}>Apply Blur</Button>
+                        <Button onClick={() => setTransformation("grayscale")}>
+                            Convert to Gray
+                        </Button>
+                        <Button onClick={() => setTransformation("pixelate")}>
+                            Pixelate
+                        </Button>
 
-                    <Button onClick={() => setTransformation("blur")}>Apply Blur</Button>
-
-                    <Button onClick={() => setTransformation("grayscale")}> Convert to Gray </Button>
-
-                    <Button onClick={() => setTransformation("pixelate")}> Pixelate </Button>
-
-                    <Button onClick={() => setTransformation("bg-remove")}> Remove Background </Button>
+                        <Button onClick={() => setTransformation("bg-remove")}>
+                            Remove Background
+                        </Button>
+                    </div>
+                    <Button variant="ghost" onClick={() => setTransformation(undefined)}>
+                        Clear All
+                    </Button>
                 </div>
 
-                <div className="grid grid-cols-2 gap-12">
+                <div className="grid grid:row md:grid-cols-2 gap-12 justify-between items-center">
                     <CldImage src={publicId} width="400" height="300" alt="some image" />
 
                     {transformation === "generative-fill" && (
@@ -117,7 +124,6 @@ export default function EditPage({
                     )}
                 </div>
             </div>
-
         </section>
     );
 }

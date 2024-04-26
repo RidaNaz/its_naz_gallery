@@ -18,7 +18,7 @@ export function SearchForm({ initialSearch }: { initialSearch: string }) {
 
   return (
 
-    <form className="md:max-w-[500px]"
+    <form className="md:max-w-[500px] "
       onSubmit={(e) => {
         e.preventDefault();
         router.replace(`/gallery?search=${encodeURIComponent(tagName)}`);
