@@ -15,7 +15,7 @@ export default async function AlbumsPage() {
           <h1 className="text-4xl font-bold text-cyan-500">Albums</h1>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 justify-center">
           {folders.map((folder) => (
             <AlbumCard key={folder.path} folder={folder} />
           ))}

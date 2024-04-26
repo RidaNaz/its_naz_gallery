@@ -14,7 +14,7 @@ import Menu from "./icons/menu"
 
 export function MobNav() {
     return (
-        <div className="sm:hidden">
+        <div className="block md:hidden">
             <Sheet>
                 <SheetTrigger asChild>
                     <Button variant="ghost"><Menu /></Button>

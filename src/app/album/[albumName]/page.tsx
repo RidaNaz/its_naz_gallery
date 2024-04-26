@@ -18,7 +18,7 @@ export default async function AlbumName({
     .execute()) as { resources: SearchResult[] };
 
   return (
-    <section className="pt-28 h-screen">
+    <section className="pt-28 h-fit pb-16">
       <ForceRefresh />
 
       <div className="flex flex-col gap-8">
