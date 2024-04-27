@@ -9,7 +9,7 @@ export default function Navbar() {
             <div className="flex mr-7 justify-between items-center">
                 <MobNav />
 
-                <div className="flex h-16 items-center container mx-auto gap-2">
+                <div className="flex h-16 items-center container mx-auto">
                     <Image
                         src="/icon.png"
                         width="50"
@@ -21,7 +21,7 @@ export default function Navbar() {
                     </Link>
                 </div>
 
-                <div className=" mt-3 hidden sm:block">
+                <div>
                     <Image src="/Ridalogo.svg" alt="my logo" width={45} height={45} />
                 </div>
             </div>
