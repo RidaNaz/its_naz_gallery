@@ -14,7 +14,7 @@ import Menu from "./icons/menu"
 
 export function MobNav() {
     return (
-        <div className="block md:hidden">
+        <div className="-mt-9 -mb-5 block md:hidden">
             <Sheet>
                 <SheetTrigger asChild>
                     <Button variant="ghost"><Menu /></Button>
@@ -24,7 +24,7 @@ export function MobNav() {
                     <SheetHeader>
                         <SheetTitle>Manage</SheetTitle>
                     </SheetHeader>
-                    <div className="space-y-1">
+                    <div className="pt-10 space-y-1">
                         <Button asChild variant="secondary" className="hover:bg-cyan-600 w-full justify-start flex gap-2">
                             <Link href="/gallery"> <Gallery /> Gallery </Link>
                         </Button>

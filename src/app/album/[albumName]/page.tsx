@@ -2,6 +2,7 @@ import cloudinary from "cloudinary";
 import AlbumGrid from "./AlbumGrid";
 import { SearchResult } from "@/app/gallery/page";
 import { ForceRefresh } from "@/components/ui/forceRefresh";
+import { MobNav } from "@/components/MobNav";
 
 export default async function AlbumName({
   params: { albumName },
@@ -19,9 +20,10 @@ export default async function AlbumName({
 
   return (
     <section className="pt-28 h-fit pb-16">
+      <MobNav/>
       <ForceRefresh />
 
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col pt-10 gap-8">
         <div className="flex justify-between">
           <h1 className="text-4xl font-bold text-cyan-500">Album {albumName}</h1>
         </div>

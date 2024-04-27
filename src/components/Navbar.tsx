@@ -7,7 +7,6 @@ export default function Navbar() {
     return (
         <div className="border-b">
             <div className="flex mr-7 justify-between items-center">
-                <MobNav />
 
                 <div className="flex h-16 items-center container mx-auto">
                     <Image

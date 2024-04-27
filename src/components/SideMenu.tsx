@@ -13,7 +13,7 @@ export default async function SideMenu() {
   };
 
   return (
-    <div className="pb-12 w-1/4">
+    <div className="pb-12 w-1/4 hidden md:block">
       <div className="space-y-4 py-4">
         <div className="px-3 py-2">
           <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight">Manage</h2>

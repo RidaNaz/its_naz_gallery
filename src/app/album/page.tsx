@@ -1,5 +1,6 @@
 import cloudinary from "cloudinary";
 import { AlbumCard } from "./AlbumCard";
+import { MobNav } from "@/components/MobNav";
 
 export type Folder = { name: string; path: string };
 
@@ -9,8 +10,9 @@ export default async function AlbumsPage() {
   };
 
   return (
-    <section className="pt-28 h-screen">
-      <div className="flex flex-col gap-8">
+    <section className="pt-28  h-screen">
+      <MobNav/>
+      <div className="flex flex-col pt-10 gap-8">
         <div className="flex justify-between">
           <h1 className="text-4xl font-bold text-cyan-500">Albums</h1>
         </div>

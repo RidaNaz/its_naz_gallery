@@ -1,5 +1,6 @@
 "use client";
 
+import { MobNav } from "@/components/MobNav";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { CldImage } from "next-cloudinary";
@@ -26,7 +27,8 @@ export default function EditPage({
 
     return (
         <section className="pt-28 pb-10">
-            <div className="flex flex-col gap-8 justify-center">
+            <MobNav/>
+            <div className="pt-10 flex flex-col gap-8 justify-center">
                 <h1 className="text-4xl font-bold text-cyan-500">Editor</h1>
 
                 <div className="flex flex-col gap-8 justify-center">
