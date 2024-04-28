@@ -5,6 +5,7 @@ import { Folder } from "@/app/album/page";
 import Album from "@/components/icons/album";
 import Gallery from "@/components/icons/gallery";
 import { Heart } from "@/components/icons/heart";
+import Home from "./icons/home";
 
 export default async function SideMenu() {
 
@@ -17,9 +18,12 @@ export default async function SideMenu() {
       <div className="space-y-4 py-4">
         <div className="px-3 py-2">
           <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight">Manage</h2>
-        
+
           <div className="space-y-1">
             <Button asChild variant="secondary" className="hover:bg-cyan-600 w-full justify-start flex gap-2">
+              <Link href="/"> <Home /> Home</Link>
+            </Button>
+            <Button asChild variant="ghost" className="hover:bg-cyan-600 w-full justify-start flex gap-2">
               <Link href="/gallery"> <Gallery /> Gallery </Link>
             </Button>
 

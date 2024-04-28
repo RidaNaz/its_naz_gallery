@@ -1,14 +1,15 @@
 "use client"
 
 import Footer from "@/components/Footer"
-import { MobNav } from "@/components/MobNav"
+import Menu from "@/components/icons/menu"
 import Spline from "@splinetool/react-spline"
+import Link from "next/link"
 
 export default function Home() {
   return (
 
     <main className="mt-36 sm:mt-0 flex flex-col" >
-      <MobNav />
+     <Link className="block sm:hidden -mt-12" href="/gallery"><Menu /></Link>
 
       <div className="flex flex-col -mt-32 sm:-mt-0 sm:pt-32 md:flex-row md:pr-4 mx-4 sm:pr-4 lg:pr-2 sm:-mx-24 md:-mx-28 lg:mx-0 w-full h-screen items-center justify-center relative overflow-x-hidden pb-12">
         <div className=" w-full h-2/4 md:h-full md:w-2/5 flex flex-col justify-center items-center md:items-start">

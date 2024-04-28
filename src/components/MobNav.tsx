@@ -11,6 +11,7 @@ import Gallery from "./icons/gallery"
 import Album from "./icons/album"
 import { Heart } from "./icons/heart"
 import Menu from "./icons/menu"
+import Home from "./icons/home"
 
 export function MobNav() {
     return (
@@ -26,6 +27,9 @@ export function MobNav() {
                     </SheetHeader>
                     <div className="pt-10 space-y-1">
                         <Button asChild variant="secondary" className="hover:bg-cyan-600 w-full justify-start flex gap-2">
+                            <Link href="/"> <Home /> Home</Link>
+                        </Button>
+                        <Button asChild variant="ghost" className="hover:bg-cyan-600 w-full justify-start flex gap-2">
                             <Link href="/gallery"> <Gallery /> Gallery </Link>
                         </Button>
 
